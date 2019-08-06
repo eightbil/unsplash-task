@@ -3,4 +3,6 @@
     <string name="single_selection">한장 선택</string>
     <string name="multiple_selection">여러장 선택</string>
     <string name="pick">사진 고르기</string>
+    <string name="acesskey"> 8e690d01dce5f579908ddb5a8133e1bf6ac9ca06035a24d000e959be4b23a98e </string>
+    <string name="secretkey"> 8a308de4cb4e3e8cde5e6b0f286b513dd5f6ceeb3c1a2cddf88e0fc88446c84b </string>
 </resources>

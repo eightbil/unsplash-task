@@ -22,11 +22,11 @@ class PhotoAdapter constructor(context: Context) : RecyclerView.Adapter<PhotoAda
     }
 
     override fun onBindViewHolder(holder: PhotoViewHolder, position: Int) {
-        // item
+
         val photo = mListOfPhotos[position]
-        // image background
+
         holder.itemView.setBackgroundColor(Color.parseColor(photo.color))
-        // loading the photo
+
         Picasso.get().load(photo.urls.small)
             .into(holder.imageView)
     }
