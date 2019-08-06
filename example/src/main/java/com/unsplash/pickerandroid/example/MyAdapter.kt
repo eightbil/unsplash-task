@@ -11,7 +11,7 @@ import com.squareup.picasso.Picasso
 import com.unsplash.pickerandroid.photopicker.data.UnsplashPhoto
 import kotlinx.android.synthetic.main.item_photo.view.*
 
-class PhotoAdapter constructor(context: Context) : RecyclerView.Adapter<PhotoAdapter.PhotoViewHolder>() {
+class MyAdapter constructor(context: Context) : RecyclerView.Adapter<MyAdapter.PhotoViewHolder>() {
 
     private val mLayoutInflater: LayoutInflater = LayoutInflater.from(context)
 
@@ -35,6 +35,9 @@ class PhotoAdapter constructor(context: Context) : RecyclerView.Adapter<PhotoAda
         return mListOfPhotos.size
     }
 
+
+
+
     fun setListOfPhotos(listOfPhotos: ArrayList<UnsplashPhoto>?) {
         if (listOfPhotos != null) {
             mListOfPhotos = listOfPhotos
@@ -42,9 +45,6 @@ class PhotoAdapter constructor(context: Context) : RecyclerView.Adapter<PhotoAda
         }
     }
 
-    /**
-     * UnsplashPhoto view holder.
-     */
     class PhotoViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val imageView: ImageView = view.item_photo_iv
     }

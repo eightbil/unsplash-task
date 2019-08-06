@@ -1,13 +1,13 @@
 <resources>
     <string name="app_name">Photo Picker</string>
-    <string name="back">Back</string>
-    <string name="checked">Checked</string>
-    <string name="clear">Clear</string>
-    <string name="done">Done</string>
-    <string name="no_result">No search results</string>
-    <string name="photo">Photo</string>
-    <string name="photo_selected">1 photo selected</string>
-    <string name="photos_selected">%1$d photos selected</string>
-    <string name="search">Search free photos</string>
+    <string name="back">뒤로가기</string>
+    <string name="checked">체크</string>
+    <string name="clear">제거</string>
+    <string name="done">완료</string>
+    <string name="no_result">검색 결과가 없습니다</string>
+    <string name="photo">사진</string>
+    <string name="photo_selected">1 장 선택</string>
+    <string name="photos_selected">%1$d 장 선택</string>
+    <string name="search">무료 사진 검색</string>
     <string name="unsplash">Unsplash</string>
 </resources>

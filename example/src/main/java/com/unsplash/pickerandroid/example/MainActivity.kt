@@ -2,18 +2,17 @@ package com.unsplash.pickerandroid.example
 
 import android.app.Activity
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
-import com.unsplash.pickerandroid.photopicker.data.UnsplashPhoto
 import com.unsplash.pickerandroid.photopicker.presentation.UnsplashPickerActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var mAdapter: PhotoAdapter
+    private lateinit var mAdapter: MyAdapter
     private lateinit var model : MyViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,7 +30,7 @@ class MainActivity : AppCompatActivity() {
         main_recycler_view.setHasFixedSize(true)
         main_recycler_view.itemAnimator = null
         main_recycler_view.layoutManager = StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL)
-        mAdapter = PhotoAdapter(this)
+        mAdapter = MyAdapter(this)
         main_recycler_view.adapter = mAdapter
         main_pick_button.setOnClickListener {
             startActivityForResult(
@@ -42,13 +41,10 @@ class MainActivity : AppCompatActivity() {
             )
         }
 
-        // 화면회전시 사진사라짐현상 방지(뷰모델)
         if(model.photos != null) {
             mAdapter.setListOfPhotos(model.photos)
         }
-
     }
-
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
@@ -60,6 +56,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     companion object {
-        private const val REQUEST_CODE = 123
+        private const val REQUEST_CODE = 1
     }
 }
