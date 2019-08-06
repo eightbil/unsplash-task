@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Unsplash Task</string>
+    <string name="single_selection">한장 선택</string>
+    <string name="multiple_selection">여러장 선택</string>
+    <string name="pick">사진 고르기</string>
+</resources>
