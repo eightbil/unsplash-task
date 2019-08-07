@@ -10,7 +10,7 @@ Assignment to the Anipen Corp.
   
 ![Unsplash Task for Android preview](https://github.com/eightbil/unsplash-task/blob/master/Unsplash_%20Task_.jpg "Unsplash Task for Android")
 
-## Condition for task
+## Conditions for task
 
 - [Kotlin]
 - [Android Archtecture Components]
