@@ -4,7 +4,10 @@ Using Unsplash API to show the list of photos in the form of the following condi
 
 Assignment to the Anipen Corp.
 
-
+  
+  
+  
+  
 ![Unsplash Task for Android preview](https://github.com/eightbil/unsplash-task/blob/master/Unsplash_%20Task_.jpg "Unsplash Task for Android")
 
 ## Condition for task
