@@ -36,8 +36,6 @@ class MyAdapter constructor(context: Context) : RecyclerView.Adapter<MyAdapter.P
     }
 
 
-
-
     fun setListOfPhotos(listOfPhotos: ArrayList<UnsplashPhoto>?) {
         if (listOfPhotos != null) {
             mListOfPhotos = listOfPhotos
