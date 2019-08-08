@@ -10,6 +10,7 @@ class ExampleApplication : Application() {
 
     override fun onCreate() {
         super.onCreate()
+        // Unsplash API 액세스키 및 시크릿키 적용
         UnsplashPhotoPicker.init(this, MyAccesskey, MySecretkey)
     }
 }

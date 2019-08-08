@@ -27,6 +27,7 @@ class MyAdapter constructor(context: Context) : RecyclerView.Adapter<MyAdapter.P
 
         holder.itemView.setBackgroundColor(Color.parseColor(photo.color))
 
+        // small변수에 저장된 url값으로 imageView홀더에 로드시킴
         Picasso.get().load(photo.urls.small)
             .into(holder.imageView)
     }
@@ -38,6 +39,7 @@ class MyAdapter constructor(context: Context) : RecyclerView.Adapter<MyAdapter.P
 
     fun setListOfPhotos(listOfPhotos: ArrayList<UnsplashPhoto>?) {
         if (listOfPhotos != null) {
+            // 뷰홀더에 바인드될 변수에 사진리스트값들을 넣어줌
             mListOfPhotos = listOfPhotos
             notifyDataSetChanged()
         }
